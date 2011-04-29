@@ -1,0 +1,12 @@
+body       { font-family: Palatino, Georgia, "Times New Roman", serif; color: #444; margin: 0; padding: 1em 2em; background: #f6f6f6 url(../img/fabric_1.gif) repeat; text-shadow: 0 1px 0 #fff; }
+h1         { font-size: 38px; }
+h1 a       { color: #777; text-decoration: none; }
+h1 a:hover { color: #222; }
+p          { font-size: 14px; line-height: 140%; }
+a          { text-decoration: none; color: #d75041; }
+a:hover    { color: #5f9391; }
+ul         { line-height: 140%; font-size: 14px; }
+li         { margin: 0 0 5px 0; }
+
+/* Footer */
+footer     {  }
