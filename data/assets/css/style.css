@@ -21,6 +21,10 @@ footer           { clear: both; width: 100%; overflow: hidden; }
 footer p         { float: left; width: 45%; }
 footer p.profile { float: right; width: 45%; text-align: right; }
 
+/* Comments */
+#disqus_thread { font-size: 12px; }
+#disqus_thread .dsq-global-toolbar-container { text-shadow: 0 1px 0 #000; font-family: Helvetica, Arial, sans-serif; }
+
 /* Twitter widget */
 .twitter    { margin: 1.5em 0; }
 .twitter ul { margin: 0; padding: 0; list-style-type: none; border-top: 1px dotted #aaa; }

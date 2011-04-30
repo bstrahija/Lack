@@ -8,7 +8,7 @@
  * @version 	0.1
  */
 
-class Site extends Lack {
+class Site extends CI_Controller {
 	
 	/* ------------------------------------------------------------------------------------------ */
 	
@@ -17,6 +17,9 @@ class Site extends Lack {
 	 */
 	public function index()
 	{
+		// Load Lack
+		$this->load->library('lack');
+		
 		// Run it!
 		Lack::run();
 		

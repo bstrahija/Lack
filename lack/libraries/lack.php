@@ -8,7 +8,7 @@
  * @version 	0.1
  */
 
-class Lack extends MY_Controller {
+class Lack extends CI_Controller {
 	
 	protected static $ci;
 	public static    $data = array();
@@ -71,7 +71,14 @@ class Lack extends MY_Controller {
 				self::$data['content'] = $entry['content'];
 				
 				// And load view
-				self::$ci->parser->parse(config_item('template_path').'/layout', self::$data);
+				if (file_exists(config_item('templates').'/layout_'.$template.'.php'))
+				{
+					self::$ci->parser->parse(config_item('template_path').'/layout_'.$template, self::$data);
+				}
+				else
+				{
+					self::$ci->parser->parse(config_item('template_path').'/layout', self::$data);
+				}
 			}
 			else
 			{
@@ -83,7 +90,14 @@ class Lack extends MY_Controller {
 				self::entry_list('array');
 				
 				// And load view
-				self::$ci->parser->parse(config_item('template_path').'/layout_list', self::$data);
+				if (file_exists(config_item('templates').'/layout_'.$template.'_list.php'))
+				{
+					self::$ci->parser->parse(config_item('template_path').'/layout_'.$template.'_list', self::$data);
+				}
+				else
+				{
+					self::$ci->parser->parse(config_item('template_path').'/layout_list', self::$data);
+				}
 			}
 		}
 		
