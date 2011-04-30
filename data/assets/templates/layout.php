@@ -1,9 +1,9 @@
-<?php Lack::partial('header'); ?>
+{header}
 
 <div id="main" role="main">
 	<article>
-		<?php echo Lack::content(); ?>
+		{content}
 	</article>
 </div>
 
-<?php Lack::partial('footer'); ?>
+{footer}

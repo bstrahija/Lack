@@ -1,7 +1,15 @@
-<?php Lack::partial('header'); ?>
+{header}
 
 <div id="main" role="main">
-	<?php echo Lack::entry_list(); ?>
+	<ul>
+		{entries}
+			<li>
+				<h2><a href="{permalink}">{title}</a></h2>
+				<h3>{when}</h3>
+				<p>{summary}</p>
+			</li>
+		{/entries}
+	</ul>
 </div>
 
-<?php Lack::partial('footer'); ?>
+{footer}
