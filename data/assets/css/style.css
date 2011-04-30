@@ -12,6 +12,7 @@ a          { text-decoration: none; color: #d75041; }
 a:hover    { color: #5f9391; }
 ul         { line-height: 140%; font-size: 14px; margin: 1.5em 0; }
 li         { margin: 0 0 5px 0; }
+code       { border: 1px solid #bbb; background: rgba(255,255,255,.8); box-shadow: 1px 1px 3px rgba(0,0,0,.2); display: block; padding: 1em; font-size: 12px; margin: 1.5em 0 2em 0; }
 
 /* Layout */
 aside            { float: left; width: 280px; margin: -10px 0 20px 0; }
