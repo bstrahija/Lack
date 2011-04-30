@@ -8,7 +8,7 @@
  * @version 	0.1
  */
 
-class Lack extends CI_Controller {
+class Lack {
 	
 	protected static $ci;
 	public static    $data = array();
@@ -24,11 +24,10 @@ class Lack extends CI_Controller {
 	 */
 	public function __construct()
 	{
-		parent::__construct();
 		self::$ci = get_instance();
 		
 		// Run setup
-		self::$ci->_setup();
+		self::_setup();
 		
 	} //end __contruct()
 	
