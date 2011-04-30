@@ -1,0 +1,34 @@
+body       { font-family: Palatino, Georgia, "Times New Roman", serif; color: #444; margin: 0; padding: 1em 2em; background: #f6f6f6 url(../img/bg.gif) repeat; text-shadow: 0 1px 0 #fff; }
+h1         { font-size: 38px; }
+h1 a       { color: #777; text-decoration: none; }
+h1 a:hover { color: #222; }
+h2         { font-size: 20px; }
+h3         { font-size: 15px; }
+h4         { font-size: 13px; }
+h5         { font-size: 12px; }
+h6         { font-size: 11px; }
+p          { font-size: 14px; line-height: 150%; margin: 1.5em 0; }
+a          { text-decoration: none; color: #d75041; }
+a:hover    { color: #5f9391; }
+ul         { line-height: 140%; font-size: 14px; margin: 1.5em 0; }
+li         { margin: 0 0 5px 0; }
+
+/* Layout */
+aside            { float: left; width: 280px; margin: -10px 0 20px 0; }
+#main            { margin: 0 20px 0 310px; }
+footer           { clear: both; width: 100%; overflow: hidden; }
+footer p         { float: left; width: 45%; }
+footer p.profile { float: right; width: 45%; text-align: right; }
+
+/* Twitter widget */
+.twitter    { margin: 1.5em 0; }
+.twitter ul { margin: 0; padding: 0; list-style-type: none; border-top: 1px dotted #aaa; }
+.twitter li { border-bottom: 1px dotted #aaa; }
+.twitter p  { font-size: 12px; }
+
+/* Codeigniter Profiler */
+#codeigniter_profiler          { display: none; width: 980px; margin: 44px auto 0 auto; overflow: auto; border: 1px solid #ccc; border-top: none; position: relative; left: 4px; .border-radius(5px); .box-shadow(0 2px 8px rgba(0,0,0,.2)); font-family: Helvetica, Arial, sans-serif; }
+#codeigniter_profiler fieldset { font-size: 12px; }
+#codeigniter_profiler table    { border-spacing: 3px; width: 938px; }
+#codeigniter_profiler table td { padding: 1px 3px; }
+#codeigniter_profiler code     { font-family: "Courier New"; font-size: 11px; line-height: 14px; }

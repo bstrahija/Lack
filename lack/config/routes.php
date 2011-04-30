@@ -38,8 +38,8 @@
 |
 */
 
-$route['default_controller'] = "lack";
-$route['404_override']       = "lack/index";
+$route['default_controller'] = "site";
+$route['404_override']       = "site/index";
 
 
 /* End of file routes.php */
