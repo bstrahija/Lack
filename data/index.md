@@ -38,6 +38,14 @@ A list of those entries is created automaticaly in the following URL:
 	
 	http://yoursite.com/blog
 
+You can add meta data to your entries by simply adding some JSON data in your data files. The simples example is adding a title that is displayed in the list:
+
+	{ "title": "One" }
+
+	##One
+
+	Lorem ipsum dolor...
+
 
 
 ## Assets
