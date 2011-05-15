@@ -211,9 +211,20 @@ class Lack {
 		$entry['time'] = filemtime(config_item('data').'/'.self::$entry_dir.'/'.$filename);
 		$entry['when'] = date('Y/m/d H:i', $entry['time']);
 		
+		// Add time to meta
+		if ( ! isset($entry['meta']->time)) $entry['meta']->time = $entry['time'];
+		if ( ! isset($entry['meta']->when)) $entry['meta']->when = $entry['when'];
+		
 		// Format content
-		if ($entry['meta']) $entry['content'] = markdown(trim(substr_replace($entry['raw_content'], '', strpos($entry['raw_content'], "{"), strpos($entry['raw_content'], "}") + 1)));
-		else                $entry['content'] = markdown(trim($entry['raw_content']));
+		if ($entry['meta'])
+		{
+			$entry['content'] = markdown(trim(substr_replace($entry['raw_content'], '', strpos($entry['raw_content'], "{"), strpos($entry['raw_content'], "}") + 1)));
+			$entry['content'] = self::$ci->parser->parse_string($entry['content'], $entry['meta'], true);
+		}
+		else
+		{
+			$entry['content'] = markdown(trim($entry['raw_content']));
+		}
 		
 		// Prepare content summary
 		$entry['summary'] = strip_tags(character_limiter($entry['content'], 200), '<strong><b><em><i><a>');

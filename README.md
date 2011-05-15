@@ -63,7 +63,7 @@ The default template used to display the data files is **layout.php**. And the t
 There's also a possibility to use partials. The template directory has 2 subfolders **core** and **partials**. 
 You can place your partials in any of them, but best practice is to put the **header**, **footer**, **aside** and **navigation** partials in the **core** folder.
 
-Then you can simply include the partials in the temaplates. An example would be something like this:
+Then you can simply include the partials in the templates. An example would be something like this:
 
 	{header}
 	
