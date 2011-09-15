@@ -1,0 +1,96 @@
+body { background: #efefef; }
+
+/* !✰ Header */
+#back header     { background: #222; box-shadow: 0 1px 3px rgba(0,0,0,.5); position: relative; z-index: 2; }
+#back .wrap      { margin: 0 auto; width: 960px; overflow: hidden; padding: 16px 0; }
+#back h1         { color: #f6f6f6; font-size: 32px; float: left; font-family: Palatino, Georgia, "Times New Roman", serif; margin: 0 30px 0 0; }
+#back h1 a       { color: #fff; text-decoration: none; } 
+#back h1 a:hover { color: #e15e50; }
+#back h1 em      { color: #e15e50; }
+
+
+/* !✰ Navigation */
+#back #nav         { width: 500px; float: left; position: relative; top: 15px; text-shadow: 0 1px 0 #000; }
+#back #nav ul      { float: left; font-size: 13px; }
+#back #nav li      { float: left; margin: 0 25px 0 0; }
+#back #nav a       { color: #ddd; text-decoration: none; }
+#back #nav a:hover { color: #e15e50; }
+#back #nav a.on    { color: #e15e50; }
+
+
+/* !✰ Location */
+#back .where          { background: #e15e50; font-family: Palatino, Georgia, "Times New Roman", serif; box-shadow: 0 1px 3px rgba(0,0,0,.3); position: relative; z-index: 1; }
+#back .where .wrap    { width: 960px; margin: 0 auto; color: #fff; text-shadow: 1px 1px 2px rgba(0,0,0,.4); padding: 10px 0; overflow: hidden; }
+#back .where h2       { font-size: 20px; float: left; margin: 0; }
+#back .where h2:after { content: "/"; margin: 0 6px; }
+#back .where h3       { font-size: 20px; float: left; margin: 0; }
+
+
+/* !✰ Main */
+#main             { width: 960px; margin: 0 auto; padding-bottom: 45px; }
+#main .actions    { width: 100%; overflow: hidden; margin: 20px 0; border-top: 1px dotted #ccc; border-bottom: 1px dotted #ccc; padding: 10px 5px; }
+#main .actions h5 { float: left; font-size: 18px; position: relative; top: 6px; margin: 0 12px 0 0; }
+#main legend      { display: none; }
+#main label       { display: block; font-size: 12px; margin: 0 0 4px 0; font-weight: bold; color: #666; }
+#main form        { padding: 20px 0; }
+#main form p      { margin: 0 0 22px 0; }
+#main h4          { margin: 20px 0 0 0; font-size: 22px; color: #555; border-bottom: 1px dotted #ccc; padding: 0 0 5px 0; }
+#main h4 em       { font-family: Palatino, Georgia, "Times New Roman", serif; color: #666; }
+#main h6          { font-size: 14px; margin: 0 0 16px; border-bottom: 1px dotted #ccc; padding: 0 0 6px 0; }
+#main h6 em       { font-family: Palatino, Georgia, "Times New Roman", serif; color: #666; }
+	
+	/* !Notices */
+	#back .notice   { background: #8faa78; padding: 10px 0; margin: 0 0 20px 0; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+	#back .notice p { margin: 0 auto; width: 960px; color: #fff; font-size: 11px; font-weight: bold; }
+	
+	/* Articles */
+	#back article             { font-size: 14px; text-shadow: 0 1px 0 #fff; padding: 3px 0 6px 4px; }
+	#back article a           { color: #444; text-decoration: none; padding: 0 0 0 22px; }
+	#back article.entry       { background: url(../img/icn_file.png) no-repeat 4px 4px; }
+	#back article.entry:hover { background-color: #f6f6f6; }
+	#back article.dir         { background: url(../img/icn_dir.png) no-repeat 4px 4px; }
+	#back article.dir:hover   { background-color: #f6f6f6; }
+	#back article a:hover     { text-decoration: underline; }
+	
+	/* Remove icon */
+	#back article a.remove       { font-size: 10px; color: #c00; padding: 0; margin-left: 10px; display: none; }
+	#back article a.remove em    { font-weight: bold; font-style: normal; }
+	#back article:hover a.remove { display: inline; }
+	
+	/* !Editing */
+	#back textarea { width: 940px; height: 280px; }
+	
+	/* !Input fields */
+	input[type=text] { font-size: 14px; border: 4px solid #ccc; padding: 6px 10px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,.1); width: 500px; }
+	
+	/* !Buttons */
+	.btns      { padding: 10px 0; }
+	.btn       { background: #333; border-radius: 5px; float: left; padding: 6px 12px; margin: 0 12px 0 0; color: #eee; font-weight: bold; font-size: 12px; text-decoration: none; line-height: 16px; border: none; }
+	.btn em    { font-size: 18px; line-height: 16px; font-style: normal; height: 16px; }
+	.btn:hover { background: #555; color: #fff; }
+	
+	/* MarkUp */
+	textarea#content            { border: 4px solid #ccc; padding: 6px 10px; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,.1); width: 930px; margin: 0 0 16px 0; }
+	.markItUpContainer          { width: 960px !important; }
+	iframe.markItUpPreviewFrame { border: 4px solid #ccc; border-radius: 5px; box-shadow: 0 1px 3px rgba(0,0,0,.1); width: 952px; margin: 0 0 16px 0; }
+
+
+/* !✰ Footer */
+#f1         { width: 960px; margin: 0 0 0 -480px; position: fixed; bottom: 0; left: 50%; background: #efefef; padding: 10px 0; border-top: 1px dotted #ccc; }
+#f1 p       { font-size: 10px; color: #999; }
+#f1 a       { text-decoration: none; color: #e15e50; }
+#f1 a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

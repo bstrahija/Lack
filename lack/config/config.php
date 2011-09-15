@@ -224,7 +224,7 @@ $config['cache_path'] = APPPATH.'/cache/';
 | MUST set an encryption key. See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'phid2jugh3jimu1liju7shuc2dorh1chu1doth4jasp7thu5me';
 
 /*
 |--------------------------------------------------------------------------

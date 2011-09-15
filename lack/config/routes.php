@@ -42,5 +42,10 @@ $route['default_controller'] = "site";
 $route['404_override']       = "site/index";
 
 
+$route['backend']         = "backend/content";
+$route['backend/login']   = "backend/authentication/login";
+$route['backend/logout']  = "backend/authentication/logout";
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
