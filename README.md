@@ -96,4 +96,6 @@ The template for the entry list would then look like this:
 	{aside}
 	
 	{footer}
+	
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/bstrahija/lack/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
